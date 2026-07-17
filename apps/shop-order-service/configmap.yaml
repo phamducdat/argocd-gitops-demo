@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-order-service-config
+  namespace: demo
+data:
+  APP_ENV: "dev"
+  LOG_LEVEL: "debug"
+  SERVER_PORT: "8081"
