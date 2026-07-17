@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/phamducdat/argocd-gitops-demo.git
     targetRevision: main
-    path: apps/shop-order-service
+    path: apps/shop-order-service/overlays/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: demo
