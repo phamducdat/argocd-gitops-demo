@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-demo
+  name: shop-order-service
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/phamducdat/argocd-gitops-demo.git
     targetRevision: main
-    path: apps/nginx
+    path: apps/shop-order-service
   destination:
     server: https://kubernetes.default.svc
     namespace: demo
